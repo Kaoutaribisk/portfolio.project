@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>personnal portfolio website - kaoutar ibisk </title>
+        <link rel="icon" href="portfolio images/ki.png" >
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    </head>
+    <body>
+        <div id="header">
+            <div class="video-container">
+                <video autoplay loop muted>
+                  <source src="portfolio images/background video.mp4" type="video/mp4">
+                </video>
+
+              <div class="container">
+                <nav> 
+                        <img src="portfolio images/Add a heading.png" class="logo">  
+                    <ul id="sidemenu">
+                        <li><a href="#header">home</a></li>
+                        <li><a href="#about">about</a></li>
+                        <li><a href="#projects">projects</a></li>
+                        <li><a href="#contact">contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>engineering student</p>
+                    <h1>Hi, I'm <span>Kaoutar</span><br> Ibisk from morocco</h1>
+                </div>
+        </div>
+    </div>
+    <!-------------about--------------->
+    <div id="about"> 
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="portfolio images/DSC_8513 copy.JPG" class="per-img">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub">about me</h1>
+                    <p>Kaoutar Ibisk, a driven engineering student born on August 1st, 2004, residing in Kenitra. My passion for art, particularly drawing and painting, harmoniously complements my dedication to computer sciences and innovation. Eager to make a lasting impact in this ever-evolving field, I relentlessly pursue knowledge and excel in my studies. Currently seeking internships and scholarships, I aim to merge my engineering expertise with artistic creativity to contribute to groundbreaking projects that shape the future of technology. With a positive attitude and strong work ethic, I am confident that my unwavering passion and commitment will lead me to a fulfilling and successful career.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">experience</p>
+                        <p class="tab-links" onclick="opentab('education')">education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>programing:</span> <br>python, css, html, java-script</li>
+                            <li><span>communication:</span> <br>french, arabic, english, public speaking, debate </li>
+                            <li><span>design/digital drawing:</span> <br>canva, clip studio paint, ibis paint x</li>
+                            <li><span>social media creator:</span> <br>video editing: clip champ, capcut</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>yanecode digital:</span> <br>intern 15july2023-15august2023</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>national school of applied sciences of Kenitra:</span> <br>engineer degree,2022-2027 (current)</li>
+                            <li><span>abdelmalek es-saadi high school:</span> <br>baccalauriat biof mathematic sciences 2021-2022, feature:good </li>
+                            <li><span>coursera:</span> <br>e-marketing and e-commerce certificate, juin 2023-now(current)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+  </div>
+  <!-----------------------projects----------------------->
+  <div id="projects">
+    <div class="container">
+        <h1 class="sub">my projects</h1>
+        <div class="projects-list">
+            <div class="project">
+                <img src="portfolio images/Screenshot 2023-07-30 124008.png" >
+                <div class="layer">
+                    <h3>portfolio web app</h3>
+                    <p>a personal website that displays my professional informations including my career</p>
+                    <a href="https://github.com/Kaoutaribisk"><i class="fa-solid fa-arrow-up-right-from-square" style="color: white;"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="portfolio images/Screenshot 2023-07-30 124256.png" >
+                <div class="layer">
+                    <h3>ki shop</h3>
+                    <p>an online shop web app</p>
+                    <a href="https://github.com/Kaoutaribisk"><i class="fa-solid fa-arrow-up-right-from-square" style="color: #ffffff;"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------------------------------------conctact-------------------------------------------->
+    <div id="contact">
+        
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>kaoutar.ibisk@uit.ac.ma</p>
+                    <p><i class="fa-solid fa-phone"></i>+212676448735</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/ki_arts_0ff/#" target="_blank"><i class="fab fa-instagram-square"></i></a>
+                        <a href="https://www.linkedin.com/in/kaoutar-ibisk-b6a8b8224/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="portfolio images/cv.pdf" download class="btn" target="_blank">download cv</a>
+                </div>
+                <div class="contact-right">
+                   <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" ></textarea>
+                    <button type="submit" class="btn">submit</button>
+                   </form> 
+                   <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>thanks for visiting!!<br>copyright ©ki</p>
+        </div>
+    </div>
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+
+    function opentab(tabname){
+        for(tablink of tablinks) {
+             tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents) {
+             tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+  </script>
+  <script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+  </script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyxdLzub96YUGGQ723bA3q0U9eSsuLuv0UxnRFFX1t7C_o4iTbIKs9tzo_o5t6GcMg4/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+        e.preventDefault();
+  fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+    .then(response => {
+      if (response.ok) {
+        msg.innerHTML = "Message sent successfully";
+        setTimeout(function () {
+          msg.innerHTML = "";
+        }, 5000);
+        form.reset();
+      } else {
+        msg.innerHTML = "Error: Message not sent. Please try again later.";
+      }
+    })
+    .catch(error => {
+      console.error('Error!', error.message);
+      msg.innerHTML = "Error: Message not sent. Please try again later.";
+    });
+});
+  </script>
+    </body>
+</html>     
